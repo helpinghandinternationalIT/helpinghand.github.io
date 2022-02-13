@@ -15,6 +15,7 @@
     <link href="assets/img/logo.jpg" rel="icon">
     <link href="assets/img/apple-touch-icon.jpg" rel="apple-touch-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/14f048b662.js" crossorigin="anonymous"></script>
     <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
         rel="stylesheet">
@@ -31,27 +32,137 @@
 </head>
 
 <style>
+    /* title-banner */
+    .title-banner {
+        display: flex;
+        padding: 1.2rem;
+        background-color: brown;
+        color: #fff;
 
-.container-fluid{
-    font-size: larger;
-}
+    }
 
-@media screen and (max-width: 600px) {
-  .container-fluid {font-size: small;
+    .title-banner h1 {
+
+        margin: 0rem;
+
+    }
+
+    .title-banner a {
+        margin: 0%;
+        color: #fff;
+    }
+
+    .title-banner .col-4 h1 {
+        border-radius: 5%;
+        padding: 2%;
+        background-color: #fff;
+        color: brown;
+    }
+
+    .title-banner .col-4 {
+
+
+        align-self: center;
+
+    }
+
+    .title-banner h1 {
+
+        font-weight: bold;
+        align-content: center;
+    }
+
+    .title-banner .col-4:hover {
+
+        color: rgb(245, 189, 189);
+        opacity: 0.9;
+        font-weight: bolder;
+        text-shadow: 0.1rem 0.1rem 0.1rem rgb(230, 220, 220);
+        text-decoration: underline;
+        transition: 3s;
+    }
+
+
+
+    .container-fluid {
+        font-size: larger;
+    }
+
+    @media screen and (max-width: 600px) {
+        .title-banner .row {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container-fluid {
+            font-size: smaller;
+        }
+
+        .title-banner .col-4 {
+
+
+            margin-top: 1rem;
+            text-align: center;
+        }
+
+        .title-banner .col-4 h1 {
+            font-size: 24px;
+        }
+
+        .content .container .row {
+            flex-direction: column;
+           
+        }
+    }
+
+    /* Content styles */
+    .content .container .row {
+        display: flex;
+
+    }
+
+    .content .container .row {
+
+      
+    }
+
+    .content .container .row .h2 {
+        font-weight: bold;
+        color: brown;
+    }
+
+    .content .container .row .Boldtext {
+        font-weight: bold;
+        color: brown;
+    }
+
+    .Price{
+        font-weight: bolder;
+        color: #fff;
+        border-radius: 2rem;
+        padding: 2%;
+        background-color: brown;
+        justify-self: center;
     
-  }
-}
+        
+    }
+
+    @media screen and (max-width: 800px) {
+        .content .container .row {
+            flex-direction: column;
+        }
+    }
 
 
 
     .Subtitle {
         text-align: center;
-        color: brown;
+        color: rgb(185, 57, 57);
         font-weight: bold;
         text-shadow: 0.1rem 0.1rem 0.2rem rgb(134, 35, 35);
     }
 
-    .Subtitle:hover{
+    .Subtitle:hover {
 
         color: brown;
         opacity: 0.9;
@@ -59,6 +170,61 @@
         text-decoration: underline;
         transition: 3s;
     }
+
+    .Enroll{
+        padding: 15px;
+        width: 35%;
+        box-shadow: 0.1rem 0.1rem 0.2rem rgb(134, 35, 35);
+        background-color: brown;
+        font-weight: bold;
+        color: #fff;
+        border: solid brown ;
+        border-radius: 1.6rem;
+    }
+
+    /* BUTTON */
+    .bn632-hover {
+        font-weight: bolder;
+        width: 35%;
+ 
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.bn632-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.bn632-hover:focus {
+  outline: none;
+}
+
+.bn632-hover.bn28 {
+  background-image: linear-gradient(
+    to right,
+    brown,
+    #f15e64,
+    #e14e53,
+    #e2373f
+  );
+  box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
+}
 </style>
 
 <body>
@@ -267,9 +433,9 @@
 
                     </p>
                     <br>
-                    <hr style="border-top: 4px solid brown;">
+                    <!-- <hr style="border-top: 4px solid brown;"> -->
 
-                    <!-- LIST start here -->
+                    <!-- LIST start here
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-12 pb-3"></div>
@@ -295,7 +461,7 @@
 
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- List end's here -->
 
 
@@ -306,26 +472,109 @@
 
     <!-- ============================= Content Container END ==================  -->
 
+    <div class="title-banner">
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-8">
+                    <h3>India’s first</h3>
+                    <h1>United nation mentorship program </h1>
+                </div>
+                <div class="col-4">
+                    <a href="https://forms.gle/8KZLKAo5kT3KJSpcA" target="_blank" rel="noopener noreferrer">
+                        <h1 style="text-align: center;">I'm intrested</h1>
+                    </a>
+                </div>
+            </div>
 
 
+
+
+            <h3></h3>
+            
+        </div>
+    </div>
+    </div>
 
 
 
     <!-- =============== PDF Section ================ -->
 
     <br><br>
-    <div class="container">
-        <a href="/assets/PDF/More Details about UN Mentorship Program.pdf" target="_blank">
-            <h2 class="Subtitle">
-                Click here to learn More Details about UN mentorship program</h2>
-        </a>
-        <hr style="border-top: 4px solid brown;">
+    <div class="content">
+        <div class="container">
 
 
-        <div class="container-fluid">
+            <hr style="border-top: 4px solid brown;">
             <div class="row">
-                <div class="col-md-12 pb-3"></div>
+                <div class="col">
+                    <h1 class="h2 mb-3 section-title">What you will learn ?</h1>
+                    <ul>
+                        <li class="bullet-point mb-2"> How to apply for UN vacancies.</li>
+
+                        <li class="bullet-point mb-2"> How to choose which agency to work for.</li>
+
+                        <li class="bullet-point mb-2"> Which agency suites your educational background.
+                        </li>
+
+                        <li class="bullet-point mb-2"> How to write effective cover letters to stand out
+                            among the rest.</li>
+
+                        <li class="bullet-point mb-2"> How to crack UN interviews</li>
+
+
+                    </ul>
+                </div>
+                <div class="col">
+                    <h1 class="h2 mb-3 section-title">Program overview</h1>
+                    <ul>
+                        <li class="bullet-point mb-2"><span class="Boldtext"> Instruction</span>
+                            <br>
+                            -Learn the tips and tricks to bag UN jobs from UN insiders
+                        </li>
+
+                        <li class="bullet-point mb-2"> <span class="Boldtext">1 month</span>
+                            <br> - 4 sessions
+                            -Make your Sundays productive
+                        </li>
+
+
+
+                        <li class="bullet-point mb-2"> <span class="Boldtext">Life time membership card</span>
+                            <br>
+                            - Enroll once, and get free access to any new webinar and workshop on United Nations forever
+                        </li>
+
+                        <li class="bullet-point mb-2"> <span class="Boldtext">Certificate</span>
+                            <br>
+                            - Get internationally recognised participation certificate
+                        </li>
+                        <br>
+                        <li class="bullet-point mb-2"> <span class="Boldtext">Price : 2500/-</span>
+                            <br>
+                           
+                        </li>
+                        
+                        <div class="container center">
+                            
+                         <span class="Price ">20% OFF INR 2000 only!</span></div>
+                            <br>
+                        
+
+
+                    </ul>
+                    
+                </div>
+                <hr style="border-top: 4px solid brown;">
             </div>
+
+        </div>
+        
+    </div>
+
+
+    <!-- <div class="container-fluid">
+          
             <div class="row">
                 <div class="col-lg-8 mb-4">
                     <h1 class="h2 mb-3 section-title">Program overview</h1>
@@ -353,55 +602,69 @@
             </div>
         </div>
 
-
-        <!-- <div class="container-fluid">
+ -->
+    <!-- <div class="container-fluid">
 
                 <iframe src="/assets/PDF/More Details about UN Mentorship Program.pdf" width="100%" height="700px"
                     style="border-radius: 4%; ">
                 </iframe>
             </div>
             <br> -->
-        <hr style="border-top: 4px solid brown;">
-        <br>
+            <div class="container-fluid">
+   
+    <br>
+    <a href="/assets/PDF/More Details about UN Mentorship Program.pdf" target="_blank">
+        <h2 class="Subtitle">
+            Click here to learn more details about UN Mentorship Program
+        </h2>
+    </a>
 
-        <!-- =============== PDF Section ================ -->
+    <!-- =============== PDF Section ================ -->
+    <a href="/assets/PDF/HHI-JAN-BOOKLATE-2022-1 (2).pdf" target="_blank">
+        <h2 class="Subtitle">
+            Click here for full syllabus of UN Mentorship Program
+        </h2>
+    </a>
+    <!-- ========= Syllabus of un mentorship program ========== -->
 
-        <!-- ========= Syllabus of un mentorship program ========== -->
-
-        <div class="container-fluid">
+    <!-- <div class="container-fluid">
             <h1 style="text-align: center; color: brown; font-weight: bold; text-shadow: 0.1rem 0.1rem 0.2rem brown;">
-                Syllabus of UN Mentorship Program</h1>
-        </div>
-        <br>
-        <img src="/assets/img/UNMP/HHI-JAN-BOOKLATE-2022-1_Page_1.jpg" class="img-fluid" alt="..." />
+                Click here for full syllabus of UN Mentorship Program</h1>
+        </div> -->
+    <br>
+    <div class="container-fluid center" >
+        <a href="https://forms.gle/8KZLKAo5kT3KJSpcA"><button class="bn632-hover bn28">Enroll Now !</button></a>
+    <!-- <button class= "Enroll"  type="button" class="btn-primary btn-lg"><a style="color: inherit; font-size: inherit;" href="" target="_blank" rel="noopener noreferrer">Enroll now !</a></button> -->
+</div>
+    <!-- <img src="/assets/img/UNMP/HHI-JAN-BOOKLATE-2022-1_Page_1.jpg" class="img-fluid" alt="..." />
         <br>
         <img src="/assets/img/UNMP/HHI-JAN-BOOKLATE-2022-1_Page_2.jpg" class="img-fluid" alt="..." />
         <br>
-        <img src="/assets/img/UNMP/HHI-JAN-BOOKLATE-2022-1_Page_3.jpg" class="img-fluid" alt="..." />
+        <img src="/assets/img/UNMP/HHI-JAN-BOOKLATE-2022-1_Page_3.jpg" class="img-fluid" alt="..." /> -->
 
-        <!-- ========= Syllabus of un mentorship program  End ========== -->
+    <!-- ========= Syllabus of un mentorship program  End ========== -->
 
 
 
-        </main>
-        <div id="footer-placeholder"></div>
-        <a href="#" class="back-to-top"><span class="scroll-top material-icons md-36">expand_less</span></a>
-        <div id="preloader"></div>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-        <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-        <script src="assets/vendor/counterup/counterup.min.js"></script>
-        <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-        <script src="assets/vendor/venobox/venobox.min.js"></script>
-        <script
-            type="text/javascript">(function () { var i, e, d = document, s = "script"; i = d.createElement("script"); i.async = 1; i.src = "https://cdn.curator.io/published/4a028fc4-c265-41a3-8d16-d943df4ec062.js"; e = d.getElementsByTagName(s)[0]; e.parentNode.insertBefore(i, e); })();</script>
-        <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-        <script src="assets/vendor/aos/aos.js"></script>
-        <script src="assets/js/main.js"></script>
-        <script src="assets/js/mapdata.js"></script>
-        <script src="assets/js/worldmap.js"></script>
+    </main>
+    <div id="footer-placeholder"></div>
+    <a href="#" class="back-to-top"><span class="scroll-top material-icons md-36">expand_less</span></a>
+    <div id="preloader"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="assets/vendor/counterup/counterup.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/venobox/venobox.min.js"></script>
+    <script
+        type="text/javascript">(function () { var i, e, d = document, s = "script"; i = d.createElement("script"); i.async = 1; i.src = "https://cdn.curator.io/published/4a028fc4-c265-41a3-8d16-d943df4ec062.js"; e = d.getElementsByTagName(s)[0]; e.parentNode.insertBefore(i, e); })();</script>
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/mapdata.js"></script>
+    <script src="assets/js/worldmap.js"></script>
 </body>
 
 </html>
