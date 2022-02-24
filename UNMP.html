@@ -657,7 +657,7 @@
         <br>
 
         <h1 style="text-align: center; color: brown; font-weight: bold;  text-shadow: 0.1rem 0.1rem 0.2rem brown;">
-            Review's</h1>
+            Reviews</h1>
         <br>
 
         <!-- Slides review Start -->
@@ -780,6 +780,8 @@
 
 
         </div>
+    </main>
+    <br>
 
 
 
@@ -789,7 +791,7 @@
         <!-- Slides review END -->
 
 
-        </main>
+        
         <div id="footer-placeholder"></div>
         <a href="#" class="back-to-top"><span class="scroll-top material-icons md-36">expand_less</span></a>
         <div id="preloader"></div>
@@ -809,6 +811,25 @@
         <script src="assets/js/main.js"></script>
         <script src="assets/js/mapdata.js"></script>
         <script src="assets/js/worldmap.js"></script>
+        <script type="text/javascript">
+            function ValidateForm(frm) {
+            if (frm.Name.value == "") {alert('Name is required.');frm.Name.focus();return false;}
+            if (frm.contact_number.value == "") {alert('Contact number is required.');frm.contact_number.focus();return false;}
+            if (frm.FromEmailAddress.value == "") {alert('Email address is required.');frm.FromEmailAddress.focus();return false;}
+            if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) {alert('Please enter a valid email address.');frm.FromEmailAddress.focus();return false;}
+            if (frm.skip_CaptchaCode.value == "") {alert('Enter security code.');frm.skip_CaptchaCode.focus();return false;}
+            return true; }
+            function ReloadCaptchaImage(captchaImageId) {
+            var obj = document.getElementById(captchaImageId);
+            var src = '' + obj.src;
+            obj.src = '';
+            var date = new Date();
+            var pos = src.indexOf('&rad=');
+            if (pos >= 0) { src = src.substr(0, pos); }
+            obj.src = src + '&rad=' + date.getTime();
+            return false; }
+            </script>
+    
 </body>
 
 </html>
